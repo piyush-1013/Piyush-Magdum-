@@ -16,7 +16,7 @@ int main()
 
     for(i=0; i<3; i++)
     {
-        printf("\nEnter name: ");
+        printf("\n Enter name: ");
         scanf(" %s", s[i].name);
 
         printf("Enter roll no.: ");
@@ -26,15 +26,16 @@ int main()
         scanf("%f %f", &s[i].m1, &s[i].m2);
     }
 
-    printf("\n--- Student Details ---\n");
+    printf("\n Student Details \n");
 
     for(i=0; i<3; i++)
     {
-        printf("\nName: %s\n", s[i].name);
-        printf("Roll no.: %d\n", s[i].r_no);
-        printf("Marks of 1st subject: %.2f and 2nd subject: %.2f\n", s[i].m1, s[i].m2);
-        printf("Result (Average): %.2f\n", (s[i].m1 + s[i].m2)/2);
+        printf("\n Name: %s\n", s[i].name);
+        printf(" Roll no.: %d\n", s[i].r_no);
+        printf(" Marks of 1st subject: %.2f and 2nd subject: %.2f\n", s[i].m1, s[i].m2);
+        printf(" Result (Average): %.2f\n", (s[i].m1 + s[i].m2)/2);
     }
 
     return 0;
 }
+

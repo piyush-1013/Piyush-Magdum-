@@ -1,5 +1,4 @@
 #include<stdio.h>
-
 struct student
 {
     char name[20];
@@ -7,7 +6,7 @@ struct student
     float m1, m2;
 };
 
-int main()
+void main()
 {
     int i;
     struct student s[10];
@@ -35,7 +34,6 @@ int main()
         printf(" Marks of 1st subject: %.2f and 2nd subject: %.2f\n", s[i].m1, s[i].m2);
         printf(" Result (Average): %.2f\n", (s[i].m1 + s[i].m2)/2);
     }
-
-    return 0;
 }
+
 

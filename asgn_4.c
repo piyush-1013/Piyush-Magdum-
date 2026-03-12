@@ -1,6 +1,6 @@
 #include <stdio.h>
-
-int main() {
+void main()
+{
     float basic, hra, ta, gross, tax, net;
 
     printf("Enter Basic Salary: ");
@@ -16,6 +16,5 @@ int main() {
 
     printf("\nGross Salary = %.2f", gross);
     printf("\nNet Salary = %.2f", net);
-
-    return 0;
 }
+

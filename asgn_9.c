@@ -9,8 +9,8 @@ void main()
     while (original != 0) 
     {
         remainder = original % 10;
-        result += remainder * remainder * remainder;
-        original /= 10;
+        result = result +( remainder * remainder * remainder);
+        original = original / 10;
     }
     
     if (result == n)

@@ -9,8 +9,8 @@ void main()
     printf("2. Subtraction\n");
     printf("3. Multiplication\n");
     printf("4. Division\n");
-    printf("5. Power (x^y)\n");
-    printf("6. Factorial (x!)\n");
+    printf("5. Power:x^y\n");
+    printf("6. Factorial:x!\n");
     printf("Enter choice: ");
     scanf("%d", &choice);
 

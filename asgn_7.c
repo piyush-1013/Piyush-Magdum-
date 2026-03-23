@@ -3,7 +3,7 @@ struct student
 {
     char name[20];
     int r_no;
-    float m1, m2;
+    float m1, m2, m3;
 };
 
 void main()
@@ -21,8 +21,8 @@ void main()
         printf("Enter roll no.: ");
         scanf("%d", &s[i].r_no);
 
-        printf("Enter Marks (2 subjects): ");
-        scanf("%f %f", &s[i].m1, &s[i].m2);
+        printf("Enter Marks in 3 subjects: ");
+        scanf("%f %f", &s[i].m1, &s[i].m2, &s[i].m3);
     }
 
     printf("\n Student Details \n");
@@ -31,8 +31,8 @@ void main()
     {
         printf("\n Name: %s\n", s[i].name);
         printf(" Roll no.: %d\n", s[i].r_no);
-        printf(" Marks of 1st subject: %.2f and 2nd subject: %.2f\n", s[i].m1, s[i].m2);
-        printf(" Result (Average): %.2f\n", (s[i].m1 + s[i].m2)/2);
+        printf(" Total marks: %.2f\n", s[i].m1+s[i].m2+s[i].m3);
+        printf(" Result (Average): %.2f\n", (s[i].m1 + s[i].m2 + s[i].m3)/3);
     }
 }
 

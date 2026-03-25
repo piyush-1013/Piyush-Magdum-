@@ -48,7 +48,7 @@ int isSubstring(char text[], char pattern[])
     }
     return 0;
 }
-int main() 
+void main() 
 {
     char str[100], rev[100], str2[100], sub[100];
     int choice;
@@ -96,5 +96,4 @@ int main()
         default:
             printf("\nInvalid choice!\n");
     }
-    return 0;
 }

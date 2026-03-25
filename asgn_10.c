@@ -2,7 +2,7 @@
 void main()
 {
     int choice;
-    double x, y, result;
+    float x, y, result;
 
     printf("Calculator Menu:\n");
     printf("1. Addition\n");
@@ -17,34 +17,34 @@ void main()
     if (choice >= 1 && choice <= 5) 
     {
         printf("Enter x: ");
-        scanf("%lf", &x);
+        scanf("%f", &x);
         if (choice != 6) 
         {
             printf("Enter y: ");
-            scanf("%lf", &y);
+            scanf("%f", &y);
         }
     }
     else if (choice == 6)
     {
         printf("Enter x: ");
-        scanf("%lf", &x);
+        scanf("%f", &x);
     }
 
     switch (choice)
     {
         case 1:
             result = x + y;
-            printf("Result: %.2lf\n", result);
+            printf("Result: %.2f\n", result);
             break;
 
         case 2:
             result = x - y;
-            printf("Result: %.2lf\n", result);
+            printf("Result: %.2f\n", result);
             break;
 
         case 3:
             result = x * y;
-            printf("Result: %.2lf\n", result);
+            printf("Result: %.2f\n", result);
             break;
 
         case 4:
@@ -53,7 +53,7 @@ void main()
             else 
             {
                 result = x / y;
-                printf("Result: %.2lf\n", result);
+                printf("Result: %.2f\n", result);
             }
             break;
 
@@ -61,14 +61,14 @@ void main()
             result = 1;
             for (int i = 0; i < (int)y; i++)
               result = result * x;
-            printf("Result: %.2lf\n", result);
+            printf("Result: %.2f\n", result);
             break;
 
         case 6:
             result = 1;
             for (int i = 1; i <= (int)x; i++)
                 result *= i;
-            printf("Result: %.2lf\n", result);
+            printf("Result: %.2f\n", result);
             break;
 
         default:

@@ -20,7 +20,7 @@ int main() {
             case 1:
                 printf("Enter a string: ");
                 scanf("%s", str1);
-                printf("Length of \"%s\" = %d\n", str1, (int)strlen(str1));
+                printf("Length of \"%s\" = %d\n", str1, strlen(str1));
                 break;
             case 2:
                 printf("Enter source string: ");
@@ -44,15 +44,13 @@ int main() {
                 int result = strcmp(str1, str2);
                 if (result == 0)
                     printf("Strings are EQUAL.\n");
-                else if (result < 0)
-                    printf("\"%s\" comes BEFORE \"%s\" alphabetically.\n", str1, str2);
                 else
-                    printf("\"%s\" comes AFTER \"%s\" alphabetically.\n", str1, str2);
+                    printf("Strings are NOT equal.\n", str1, str2);
                 break;
             case 5:
-                printf("Enter main string:       ");
+                printf("Enter main string : ");
                 scanf("%s", str1);
-                printf("Enter substring to find: ");
+                printf("Enter substring to find : ");
                 scanf("%s", str2);
                 char *pos = strstr(str1, str2);
                 if (pos)
